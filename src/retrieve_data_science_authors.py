@@ -18,8 +18,8 @@ authors_raw = [
     ("Guerzoni", "Marco", "SECS-P/06"),
     ("Maurino", "Andrea", "INF/01"),
     ("Mercorio", "Fabio", "INF/01"),
-    ("Messina", "Vincenzina", "MAT/09"),
-    ("Monti", "Gianna Serafina", "SECS-S/01"),
+    ("Messina", "Enza", "MAT/09"),
+    ("Monti", "Gianna", "SECS-S/01"),
     ("Moretto", "Enrico", "SECS-S/06"),
     ("Napoletano", "Paolo", "INF/01"),
     ("Paganoni", "Marco", "FIS/01"),
@@ -28,7 +28,7 @@ authors_raw = [
     ("Pelagatti", "Matteo", "SECS-S/03"),
     ("Pennoni", "Fulvia", "SECS-S/01"),
     ("Pescini", "Dario", "INF/01"),
-    ("Presto", "Luca", "FIS/07"),
+    ("Presotto", "Luca", "FIS/07"),
     ("Rebora", "Paola", "MED/01"),
     ("Stella", "Fabio Antonio", "MAT/09"),
     ("Viviani", "Marco", "INF/01")
@@ -36,4 +36,4 @@ authors_raw = [
 
 df_authors = pd.DataFrame(authors_raw, columns=["Last name", "Name", "SSD"])
 
-df_authors.to_csv("data/data_science/authors/authors_data_science.csv", index=False)
+df_authors.to_csv("data/authors/authors_data_science.csv", index=False)
