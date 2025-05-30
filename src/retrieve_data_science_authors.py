@@ -1,7 +1,6 @@
 import pandas as pd
 
 authors_raw = [
-    ("Andreotti", "Alberta Argia", "SPS/09"),
     ("Bernasconi", "Davide Paolo", "MED/01"),
     ("Bianco", "Simone", "INF/01"),
     ("Bissiri", "Pier Giovanni", "SECS-S/01"),
@@ -9,7 +8,6 @@ authors_raw = [
     ("Chicco", "Davide", "INF/01"),
     ("Ciavotta", "Michele", "INF/01"),
     ("Della Vedova", "Gianluca", "INF/01"),
-    ("Di Domenica", "Nico", "SECS-P/08"),
     ("Fattore", "Marco", "SECS-S/03"),
     ("Ferretti", "Claudio", "INF/01"),
     ("Fersini", "Elisabetta", "INF/01"),
