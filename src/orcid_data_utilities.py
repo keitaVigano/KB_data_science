@@ -38,6 +38,8 @@ def search_orcid_bicocca(given_name, family_name):
 
 
 def get_author_info_bicocca(author_name):
+    ''' Attenzione al nome perché questo metodo viene usato per la ricerca dei matadata
+    degli autori per nome di quelli della bicocca'''
     search_url = f"https://api.openalex.org/authors?search={author_name}"
     response = requests.get(search_url)
     ins_id = []
@@ -61,7 +63,8 @@ def get_author_info_bicocca(author_name):
             if affiliated_to_bicocca:
                 author_id = author.get('id')
                 display_name = author.get('display_name')
-                orcid = author.get('orcid')
+                orcid_raw = author.get('orcid')
+                orcid = orcid_raw.split("/")[-1]
 
                 for institution in affiliations:
                     ins = institution.get('institution', {})
@@ -90,58 +93,5 @@ def get_author_info_bicocca(author_name):
 
     else:
         print(f"Errore nella richiesta: {response.status_code}")
-
-    return result
-
-
-
-
-    search_url = f"https://api.openalex.org/authors?search={author_name}"
-    response = requests.get(search_url)
-    result = {}
-
-    if response.status_code == 200:
-        data = response.json()
-        results = data.get('results', [])
-
-        for author in results:
-            affiliations = author.get('affiliations', [])
-            affiliated_to_bicocca = any(
-                inst.get('institution', {}).get('id') == "https://openalex.org/institutions/I66752286"
-                for inst in affiliations
-            )
-
-            if affiliated_to_bicocca:
-                author_id = author.get('id')
-                display_name = author.get('display_name')
-                orcid = author.get('orcid')
-
-                ins_id = []
-                ins_name = []
-                for institution in affiliations:
-                    inst = institution.get('institution', {})
-                    ins_id.append(inst.get('id'))
-                    ins_name.append(inst.get('display_name'))
-
-                topics = author.get("topics", [])
-                fields = list({
-                    t.get("subfield", {}).get("display_name")
-                    for t in topics if t.get("subfield")
-                })
-
-                hindex = author.get("summary_stats", {}).get("h_index", 0)
-
-                result = {
-                    "id": author_id,
-                    "ins_id": ins_id,
-                    "ins_name": ins_name,
-                    "orcid": orcid,
-                    "topics": fields,
-                    "hindex": hindex
-                }
-                break  # esce al primo autore affiliato a Bicocca
-
-    else:
-        print(f"❌ Errore nella richiesta: {response.status_code}")
 
     return result
