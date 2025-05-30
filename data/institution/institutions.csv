@@ -1,0 +1,128 @@
+ins_id,ins_name,ins_type,ins_country
+https://openalex.org/I138689650,University of Padua,funder,IT
+https://openalex.org/I4210094195,Azienda Socio Sanitaria Territoriale Grande Ospedale Metropolitano Niguarda,healthcare,IT
+https://openalex.org/I4210146710,Mayo Clinic in Florida,healthcare,US
+https://openalex.org/I4210110840,Azienda Ospedaliera San Gerardo,healthcare,IT
+https://openalex.org/I66752286,University of Milano-Bicocca,funder,IT
+https://openalex.org/I4210153126,Istituti di Ricovero e Cura a Carattere Scientifico,healthcare,IT
+https://openalex.org/I189158943,University of Milan,funder,IT
+https://openalex.org/I4210151645,Policlinico San Matteo Fondazione,healthcare,IT
+https://openalex.org/I4210152301,Azienda Ospedaliera di Desio e Vimercate,healthcare,IT
+https://openalex.org/I2277624104,Fondazione Bruno Kessler,funder,IT
+https://openalex.org/I25217355,University of Pavia,funder,IT
+https://openalex.org/I86519309,The University of Texas at Austin,funder,US
+https://openalex.org/I69737025,University of Chile,funder,CL
+https://openalex.org/I4210139705,Ingegneria dei Sistemi (Italy),company,IT
+https://openalex.org/I36443711,Magna Graecia University,education,IT
+https://openalex.org/I169381384,University of Groningen,funder,NL
+https://openalex.org/I2801845744,Toronto General Hospital,healthcare,CA
+https://openalex.org/I180670191,"University of California, San Francisco",funder,US
+https://openalex.org/I116067653,University of Rome Tor Vergata,funder,IT
+https://openalex.org/I83019370,Eindhoven University of Technology,funder,NL
+https://openalex.org/I149461666,Ca' Foscari University of Venice,funder,IT
+https://openalex.org/I4210105192,United Institute of Informatics Problems,facility,BY
+https://openalex.org/I4210117802,Institute of Electronics,nonprofit,BG
+https://openalex.org/I93860229,Politecnico di Milano,funder,IT
+,,,
+https://openalex.org/I32699454,Joint Institute for Nuclear Research,funder,RU
+https://openalex.org/I145847075,TU Wien,funder,AT
+https://openalex.org/I4210103417,Systematic (Netherlands),company,NL
+https://openalex.org/I181565077,Georgia State University,funder,US
+https://openalex.org/I74788687,Comenius University Bratislava,funder,SK
+https://openalex.org/I279922783,Pwani University,education,KE
+https://openalex.org/I173956350,Patna Medical College and Hospital,education,IN
+https://openalex.org/I39555362,University of Warwick,funder,GB
+https://openalex.org/I20121455,Bielefeld University,funder,DE
+https://openalex.org/I129043915,University of Udine,funder,IT
+https://openalex.org/I185103710,"University of California, Santa Cruz",funder,US
+https://openalex.org/I4068193,University of Belgrade,funder,RS
+https://openalex.org/I4210125301,Health Awareness (United States),company,US
+https://openalex.org/I861853513,Sapienza University of Rome,funder,IT
+https://openalex.org/I11039511,University of Bergamo,funder,IT
+https://openalex.org/I55133342,University of Macerata,funder,IT
+https://openalex.org/I60053951,Universitat Politècnica de València,funder,ES
+https://openalex.org/I71209653,Bocconi University,funder,IT
+https://openalex.org/I27483092,University of Perugia,funder,IT
+https://openalex.org/I176601375,Khalifa University of Science and Technology,funder,AE
+https://openalex.org/I4210144925,Technological University Dublin,funder,IE
+https://openalex.org/I205274468,Trinity College Dublin,funder,IE
+https://openalex.org/I74319210,Chitkara University,funder,IN
+https://openalex.org/I103320735,Università Cattolica del Sacro Cuore,funder,IT
+https://openalex.org/I4210087059,Technology Innovation Institute,facility,AE
+https://openalex.org/I81556334,Amrita Vishwa Vidyapeetham,funder,IN
+https://openalex.org/I119939252,Indraprastha Institute of Information Technology Delhi,funder,IN
+https://openalex.org/I117222138,Abu Dhabi University,education,AE
+https://openalex.org/I98358874,Delft University of Technology,funder,NL
+https://openalex.org/I55143463,University of Turin,funder,IT
+https://openalex.org/I127077003,IMT School for Advanced Studies Lucca,funder,IT
+https://openalex.org/I162290304,Scuola Superiore Sant'Anna,funder,IT
+https://openalex.org/I122534668,Marche Polytechnic University,funder,IT
+https://openalex.org/I35440088,ETH Zurich,funder,CH
+https://openalex.org/I71267560,University of Naples Federico II,funder,IT
+https://openalex.org/I931913249,Norwegian School of Economics,education,NO
+https://openalex.org/I177477856,Polytechnic University of Turin,funder,IT
+https://openalex.org/I4210095629,Institute of Molecular Bioimaging and Physiology,facility,IT
+https://openalex.org/I4210116940,Don Carlo Gnocchi Foundation,nonprofit,IT
+https://openalex.org/I4210153325,Institute of Mathematical Statistics,other,US
+https://openalex.org/I184942183,University of Oslo,funder,NO
+https://openalex.org/I62318514,University of Duisburg-Essen,funder,DE
+https://openalex.org/I68916915,University of Gabès,funder,TN
+https://openalex.org/I305386,Colgate-Palmolive (Switzerland),funder,CH
+https://openalex.org/I4210139461,Laboratoire d'Informatique de l'École Polytechnique,facility,FR
+https://openalex.org/I15196421,University of Applied Sciences and Arts of Southern Switzerland,education,CH
+https://openalex.org/I97018004,Stanford University,funder,US
+https://openalex.org/I165862685,"St George's, University of London",funder,GB
+https://openalex.org/I3006985408,Jožef Stefan Institute,funder,SI
+https://openalex.org/I46831270,Ontotext (Bulgaria),company,BG
+https://openalex.org/I173888879,SINTEF,facility,NO
+https://openalex.org/I160993911,Queensland University of Technology,funder,AU
+https://openalex.org/I62916508,Technical University of Munich,funder,DE
+https://openalex.org/I4210107205,Russian State University for Physical Education Sport Youth and Tourism,education,RU
+https://openalex.org/I4210117005,Laboratoire des Sciences du Numérique de Nantes,facility,FR
+https://openalex.org/I102248843,Vienna University of Economics and Business,education,AT
+https://openalex.org/I100066346,University of Stuttgart,funder,DE
+https://openalex.org/I4210167034,Millennium Institute for Integrative Biology,other,CL
+https://openalex.org/I121797337,Leiden University,funder,NL
+https://openalex.org/I4210109742,Shree Krishna Hospital,healthcare,IN
+https://openalex.org/I899635006,Université Grenoble Alpes,funder,FR
+https://openalex.org/I118347636,Australian National University,funder,AU
+https://openalex.org/I157286207,"National University of Ireland, Maynooth",funder,IE
+https://openalex.org/I9617848,Universitat Politècnica de Catalunya,funder,ES
+https://openalex.org/I4210104430,Laboratoire d'Informatique de Grenoble,facility,FR
+https://openalex.org/I4210133755,Universitas Muhammadiyah Kupang,education,ID
+https://openalex.org/I2799858192,London School of Business and Management,education,GB
+https://openalex.org/I142263535,University of Nottingham,funder,GB
+https://openalex.org/I166337079,Queen Mary University of London,funder,GB
+https://openalex.org/I1289910757,NEOMA Business School,education,FR
+https://openalex.org/I123338534,Università degli Studi del Piemonte Orientale “Amedeo Avogadro”,funder,IT
+https://openalex.org/I31762744,University of Gastronomic Sciences,funder,IT
+https://openalex.org/I176453806,University of Potsdam,funder,DE
+https://openalex.org/I57201433,Università della Svizzera italiana,education,CH
+https://openalex.org/I305801656,Wroclaw University of Economics and Business,education,PL
+https://openalex.org/I188922065,University of Economics in Katowice,education,PL
+https://openalex.org/I4210142206,Centro Nacional de Análisis Genómico,facility,ES
+https://openalex.org/I4210127540,Nerviano Medical Sciences,company,IT
+https://openalex.org/I865915315,Vrije Universiteit Amsterdam,funder,NL
+https://openalex.org/I4210134201,IRCCS Istituto Auxologico Italiano,healthcare,IT
+https://openalex.org/I4210155236,National Research Council,nonprofit,IT
+https://openalex.org/I4210154278,Institute of Biomedical Technologies,facility,IT
+https://openalex.org/I4210133214,IRCCS Ospedale San Raffaele,healthcare,IT
+https://openalex.org/I2799358833,Azienda Ospedaliera San Giovanni Addolorata,healthcare,IT
+https://openalex.org/I79576946,University of Pennsylvania,funder,US
+https://openalex.org/I4210099239,IRCCS Policlinico San Donato,healthcare,IT
+https://openalex.org/I4210135416,Ospedale di Parma,healthcare,IT
+https://openalex.org/I31746571,UNSW Sydney,funder,AU
+https://openalex.org/I1324925910,St Thomas' Hospital,healthcare,GB
+https://openalex.org/I4210150100,Metropolitana Milanese (Italy),company,IT
+https://openalex.org/I6141010,European Institute of Oncology,healthcare,IT
+https://openalex.org/I4210156707,Fondazione IRCCS Istituto Nazionale dei Tumori,healthcare,IT
+https://openalex.org/I94624287,University of Twente,funder,NL
+https://openalex.org/I110002522,University of Essex,funder,GB
+https://openalex.org/I171543936,Free University of Bozen-Bolzano,funder,IT
+https://openalex.org/I2802934949,Radboud University Medical Center,healthcare,NL
+https://openalex.org/I145872427,Radboud University Nijmegen,funder,NL
+https://openalex.org/I108290504,University of Pisa,funder,IT
+https://openalex.org/I4210156583,Laboratoire d'Informatique de Paris-Nord,facility,FR
+https://openalex.org/I135117807,Université de Sherbrooke,funder,CA
+https://openalex.org/I186771145,Covenant University,funder,NG
+https://openalex.org/I60668342,University of Regensburg,funder,DE
