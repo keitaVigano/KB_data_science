@@ -95,3 +95,66 @@ def get_author_info_bicocca(author_name):
         print(f"Errore nella richiesta: {response.status_code}")
 
     return result
+
+
+def get_author_info_by_orcid(orcid):
+    search_url = f"https://api.openalex.org/authors?filter=orcid:{orcid}"
+    try:
+        response = requests.get(search_url, timeout=10)
+        response.raise_for_status()
+    except requests.exceptions.Timeout:
+        print(f"Timeout per ORCID {orcid}")
+        return {}
+    except requests.exceptions.RequestException as e:
+        print(f"Errore per ORCID {orcid}: {e}")
+        return {}
+
+    result = {}
+    fields = []
+
+    if response.status_code == 200:
+        data = response.json()
+        results = data.get('results', [])
+
+        for author in results:
+            affiliations = author.get('affiliations', [])
+            ins_raw = author.get('last_known_institutions', [])
+            if ins_raw:
+                ins = ins_raw[0].get('display_name')
+                ins_id = ins_raw[0].get('id')
+                ins_type = ins_raw[0].get('type')
+                ins_country = ins_raw[0].get('country_code')
+            else:
+                ins = ""
+                ins_id = ""
+                ins_type = ""
+                ins_country = ""
+
+            topics = author.get("topics", [])
+            i = 0
+            for t in topics:
+                if i > 4:
+                    break
+                field = t.get("display_name")
+                if field and field not in fields:
+                    fields.append(field)
+                i += 1
+
+            result["id"] = author.get("id")
+            result["Name"] = author.get("display_name")
+            result["ins_id"] = ins_id
+            result["ins_name"] = ins
+            result["ins_type"] = ins_type
+            result["ins_country"] = ins_country
+            result["topics"] = fields
+            result["hindex"] = author.get("summary_stats", {}).get("h_index", 0)
+
+            break
+
+        if not result:
+            print(f"Nessun autore affiliato trovato per ORCID: {orcid}")
+
+    else:
+        print(f"Errore nella richiesta: {response.status_code}")
+
+    return result
