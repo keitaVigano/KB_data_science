@@ -2776,7 +2776,7 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Atomic_and_Molecular_Physics,_and_Optics> a ds:Topic ;
     rdfs:label "Atomic and Molecular Physics, and Optics" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q489328> .
+    owl:sameAs <http://www.wikidata.org/entity/Q489328> .
 
 <http://dsgraph.org/ds/topic/Biochemistry> a ds:Topic ;
     rdfs:label "Biochemistry" ;
@@ -2796,7 +2796,7 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Computer_Science_Applications> a ds:Topic ;
     rdfs:label "Computer Science Applications" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q21198> .
+    owl:sameAs <http://www.wikidata.org/entity/Q21198> .
 
 <http://dsgraph.org/ds/topic/Control_and_Systems_Engineering> a ds:Topic ;
     rdfs:label "Control and Systems Engineering" ;
@@ -2820,15 +2820,15 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/General_Agricultural_and_Biological_Sciences> a ds:Topic ;
     rdfs:label "General Agricultural and Biological Sciences" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q11451> .
+    owl:sameAs <http://www.wikidata.org/entity/Q11451> .
 
 <http://dsgraph.org/ds/topic/General_Economics,_Econometrics_and_Finance> a ds:Topic ;
     rdfs:label "General Economics, Econometrics and Finance" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q8134> .
+    owl:sameAs <http://www.wikidata.org/entity/Q8134> .
 
 <http://dsgraph.org/ds/topic/General_Health_Professions> a ds:Topic ;
     rdfs:label "General Health Professions" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q3922583> .
+    owl:sameAs <http://www.wikidata.org/entity/Q3922583> .
 
 <http://dsgraph.org/ds/topic/Genetics> a ds:Topic ;
     rdfs:label "Genetics" ;
@@ -2840,7 +2840,7 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Hardware_and_Architecture> a ds:Topic ;
     rdfs:label "Hardware and Architecture" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q3966> .
+    owl:sameAs <http://www.wikidata.org/entity/Q3966> .
 
 <http://dsgraph.org/ds/topic/Health> a ds:Topic ;
     rdfs:label "Health" ;
@@ -2848,11 +2848,11 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Health,_Toxicology_and_Mutagenesis> a ds:Topic ;
     rdfs:label "Health, Toxicology and Mutagenesis" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q7218> .
+    owl:sameAs <http://www.wikidata.org/entity/Q7218> .
 
 <http://dsgraph.org/ds/topic/Health_Information_Management> a ds:Topic ;
     rdfs:label "Health Information Management" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q55693901> .
+    owl:sameAs <http://www.wikidata.org/entity/Q55693901> .
 
 <http://dsgraph.org/ds/topic/Immunology> a ds:Topic ;
     rdfs:label "Immunology" ;
@@ -2860,7 +2860,7 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Industrial_and_Manufacturing_Engineering> a ds:Topic ;
     rdfs:label "Industrial and Manufacturing Engineering" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q11049265> .
+    owl:sameAs <http://www.wikidata.org/entity/Q11049265> .
 
 <http://dsgraph.org/ds/topic/Infectious_Diseases> a ds:Topic ;
     rdfs:label "Infectious Diseases" ;
@@ -2868,7 +2868,7 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Management,_Monitoring,_Policy_and_Law> a ds:Topic ;
     rdfs:label "Management, Monitoring, Policy and Law" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q7748> .
+    owl:sameAs <http://www.wikidata.org/entity/Q7748> .
 
 <http://dsgraph.org/ds/topic/Modeling_and_Simulation> a ds:Topic ;
     rdfs:label "Modeling and Simulation" ;
@@ -2880,7 +2880,7 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Physical_and_Theoretical_Chemistry> a ds:Topic ;
     rdfs:label "Physical and Theoretical Chemistry" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q321150> .
+    owl:sameAs <http://www.wikidata.org/entity/Q321150> .
 
 <http://dsgraph.org/ds/topic/Political_Science_and_International_Relations> a ds:Topic ;
     rdfs:label "Political Science and International Relations" ;
@@ -2892,7 +2892,7 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Radiological_and_Ultrasound_Technology> a ds:Topic ;
     rdfs:label "Radiological and Ultrasound Technology" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q77604> .
+    owl:sameAs <http://www.wikidata.org/entity/Q77604> .
 
 <http://dsgraph.org/ds/topic/Software> a ds:Topic ;
     rdfs:label "Software" ;
@@ -2904,7 +2904,7 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Tourism,_Leisure_and_Hospitality_Management> a ds:Topic ;
     rdfs:label "Tourism, Leisure and Hospitality Management" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q15816013> .
+    owl:sameAs <http://www.wikidata.org/entity/Q15816013> .
 
 <https://openalex.org/I100066346> a ds:Institution ;
     rdfs:label "University of Stuttgart" ;
@@ -4675,7 +4675,7 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Computational_Theory_and_Mathematics> a ds:Topic ;
     rdfs:label "Computational Theory and Mathematics" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q1122491> .
+    owl:sameAs <http://www.wikidata.org/entity/Q1122491> .
 
 <http://dsgraph.org/ds/topic/Demography> a ds:Topic ;
     rdfs:label "Demography" ;
@@ -4683,7 +4683,7 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Experimental_and_Cognitive_Psychology> a ds:Topic ;
     rdfs:label "Experimental and Cognitive Psychology" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q23373> .
+    owl:sameAs <http://www.wikidata.org/entity/Q23373> .
 
 <http://dsgraph.org/ds/topic/Finance> a ds:Topic ;
     rdfs:label "Finance" ;
@@ -4703,11 +4703,11 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Radiology,_Nuclear_Medicine_and_Imaging> a ds:Topic ;
     rdfs:label "Radiology, Nuclear Medicine and Imaging" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q77604> .
+    owl:sameAs <http://www.wikidata.org/entity/Q77604> .
 
 <http://dsgraph.org/ds/topic/Strategy_and_Management> a ds:Topic ;
     rdfs:label "Strategy and Management" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q185451> .
+    owl:sameAs <http://www.wikidata.org/entity/Q185451> .
 
 <http://dsgraph.org/ds/topic/Toxicology> a ds:Topic ;
     rdfs:label "Toxicology" ;
@@ -5528,7 +5528,7 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Statistical_and_Nonlinear_Physics> a ds:Topic ;
     rdfs:label "Statistical and Nonlinear Physics" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q677916> .
+    owl:sameAs <http://www.wikidata.org/entity/Q677916> .
 
 <https://openalex.org/I149461666> a ds:Institution ;
     rdfs:label "Ca' Foscari University of Venice" ;
@@ -6212,11 +6212,11 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Cardiology_and_Cardiovascular_Medicine> a ds:Topic ;
     rdfs:label "Cardiology and Cardiovascular Medicine" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q10379> .
+    owl:sameAs <http://www.wikidata.org/entity/Q10379> .
 
 <http://dsgraph.org/ds/topic/Electrical_and_Electronic_Engineering> a ds:Topic ;
     rdfs:label "Electrical and Electronic Engineering" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q126095> .
+    owl:sameAs <http://www.wikidata.org/entity/Q126095> .
 
 <http://dsgraph.org/ds/topic/Endocrinology,_Diabetes_and_Metabolism> a ds:Topic ;
     rdfs:label "Endocrinology, Diabetes and Metabolism" ;
@@ -6734,7 +6734,7 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Statistics_and_Probability> a ds:Topic ;
     rdfs:label "Statistics and Probability" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q12483> .
+    owl:sameAs <http://www.wikidata.org/entity/Q12483> .
 
 <https://openalex.org/I138689650> a ds:Institution ;
     rdfs:label "University of Padua" ;
@@ -7146,11 +7146,11 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Computer_Networks_and_Communications> a ds:Topic ;
     rdfs:label "Computer Networks and Communications" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q1301371> .
+    owl:sameAs <http://www.wikidata.org/entity/Q1301371> .
 
 <http://dsgraph.org/ds/topic/Management_Science_and_Operations_Research> a ds:Topic ;
     rdfs:label "Management Science and Operations Research" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q2414942> .
+    owl:sameAs <http://www.wikidata.org/entity/Q2414942> .
 
 <http://dsgraph.org/ds/0000-0001-8786-2276> a ds:Author ;
     rdfs:label "Luca Denti" ;
@@ -7473,7 +7473,7 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Economics_and_Econometrics> a ds:Topic ;
     rdfs:label "Economics and Econometrics" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q8134> .
+    owl:sameAs <http://www.wikidata.org/entity/Q8134> .
 
 <http://dsgraph.org/ds/0000-0002-1394-0507> a ds:Author ;
     rdfs:label "Fabio Antonio Stella" ;
@@ -7547,7 +7547,7 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Sociology_and_Political_Science> a ds:Topic ;
     rdfs:label "Sociology and Political Science" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q34749> .
+    owl:sameAs <http://www.wikidata.org/entity/Q34749> .
 
 <http://dsgraph.org/ds/0000-0002-7070-1545> a ds:Author ;
     rdfs:label "Simone Bianco" ;
@@ -7830,7 +7830,7 @@ ds:hasAuthor rdfs:domain ds:Paper ;
 
 <http://dsgraph.org/ds/topic/Computer_Vision_and_Pattern_Recognition> a ds:Topic ;
     rdfs:label "Computer Vision and Pattern Recognition" ;
-    owl:sameAs <https://www.wikidata.org/wiki/Q844240> .
+    owl:sameAs <http://www.wikidata.org/entity/Q844240> .
 
 <http://dsgraph.org/ds/0000-0001-5186-0199> a ds:Author ;
     rdfs:label "Gabriele Gianini" ;
