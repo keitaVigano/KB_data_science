@@ -1,6 +1,11 @@
 @prefix ds: <http://example.org/ds#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ds:authored rdfs:domain ds:Author ;
+    rdfs:range ds:Paper ;
+    owl:inverseOf ds:hasAuthor .
 
 <http://example.org/ds/0000-0001-9601-0403> a ds:Author ;
     rdfs:label "Mirko Cesarini" ;
@@ -29,6 +34,9 @@
     ds:hasTopic "['Particle physics theoretical and experimental studies', 'High-Energy Particle Collisions Research', 'Quantum Chromodynamics and Particle Interactions', 'Particle Detector Development and Performance', 'Dark Matter and Cosmic Phenomena', 'Cosmology and Gravitation Theories', 'Computational Physics and Python Applications', 'Neutrino Physics Research', 'Radiation Detection and Scintillator Technologies', 'Medical Imaging Techniques and Applications', 'Astrophysics and Cosmic Phenomena', 'Black Holes and Theoretical Physics', 'Atomic and Subatomic Physics Research', 'Particle Accelerators and Free-Electron Lasers', 'Distributed and Parallel Computing Systems', 'Particle accelerators and beam dynamics', 'Superconducting Materials and Applications', 'Radiation Therapy and Dosimetry', 'Scientific Research and Discoveries', 'Scientific Computing and Data Management', 'Nuclear reactor physics and engineering', 'Advanced Data Storage Technologies', 'Nuclear Physics and Applications', 'Gamma-ray bursts and supernovae', 'Advanced Optical Sensing Technologies']" ;
     ds:pastInstitutionsID "['https://openalex.org/I4210140564', 'https://openalex.org/I4210129701', 'https://openalex.org/I132091411', 'https://openalex.org/I149213910', 'https://openalex.org/I67311998', 'https://openalex.org/I57201433', 'https://openalex.org/I189158943', 'https://openalex.org/I4210099850', 'https://openalex.org/I2802335433']" ;
     ds:teaches <http://example.org/ds/Data_Science_Lab_in_Environment_and_Physics> .
+
+ds:hasAuthor rdfs:domain ds:Paper ;
+    rdfs:range ds:Author .
 
 <http://example.org/ds/0000-0001-2345-6789> a ds:Author ;
     rdfs:label "Oktovianus Rerung" ;
@@ -2979,235 +2987,274 @@
     rdfs:label "University of Stuttgart" ;
     ds:institutionCountry "DE" ;
     ds:institutionName "University of Stuttgart" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q122453> .
 
 <https://openalex.org/I102248843> a ds:Institution ;
     rdfs:label "Vienna University of Economics and Business" ;
     ds:institutionCountry "AT" ;
     ds:institutionName "Vienna University of Economics and Business" ;
-    ds:institutionType "education" .
+    ds:institutionType "education" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q278044> .
 
 <https://openalex.org/I103320735> a ds:Institution ;
     rdfs:label "Università Cattolica del Sacro Cuore" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "Università Cattolica del Sacro Cuore" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q229022> .
 
 <https://openalex.org/I110002522> a ds:Institution ;
     rdfs:label "University of Essex" ;
     ds:institutionCountry "GB" ;
     ds:institutionName "University of Essex" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1075104> .
 
 <https://openalex.org/I11039511> a ds:Institution ;
     rdfs:label "University of Bergamo" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "University of Bergamo" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q45855> .
 
 <https://openalex.org/I117222138> a ds:Institution ;
     rdfs:label "Abu Dhabi University" ;
     ds:institutionCountry "AE" ;
     ds:institutionName "Abu Dhabi University" ;
-    ds:institutionType "education" .
+    ds:institutionType "education" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4670157> .
 
 <https://openalex.org/I118347636> a ds:Institution ;
     rdfs:label "Australian National University" ;
     ds:institutionCountry "AU" ;
     ds:institutionName "Australian National University" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q127990> .
 
 <https://openalex.org/I119939252> a ds:Institution ;
     rdfs:label "Indraprastha Institute of Information Technology Delhi" ;
     ds:institutionCountry "IN" ;
     ds:institutionName "Indraprastha Institute of Information Technology Delhi" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q17056472> .
 
 <https://openalex.org/I122534668> a ds:Institution ;
     rdfs:label "Marche Polytechnic University" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "Marche Polytechnic University" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1084409> .
 
 <https://openalex.org/I123338534> a ds:Institution ;
     rdfs:label "Università degli Studi del Piemonte Orientale “Amedeo Avogadro”" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "Università degli Studi del Piemonte Orientale “Amedeo Avogadro”" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1235561> .
 
 <https://openalex.org/I1289910757> a ds:Institution ;
     rdfs:label "NEOMA Business School" ;
     ds:institutionCountry "FR" ;
     ds:institutionName "NEOMA Business School" ;
-    ds:institutionType "education" .
+    ds:institutionType "education" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q16665962> .
 
 <https://openalex.org/I129043915> a ds:Institution ;
     rdfs:label "University of Udine" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "University of Udine" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2307935> .
 
 <https://openalex.org/I1324925910> a ds:Institution ;
     rdfs:label "St Thomas' Hospital" ;
     ds:institutionCountry "GB" ;
     ds:institutionName "St Thomas' Hospital" ;
-    ds:institutionType "healthcare" .
+    ds:institutionType "healthcare" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1143779> .
 
 <https://openalex.org/I135117807> a ds:Institution ;
     rdfs:label "Université de Sherbrooke" ;
     ds:institutionCountry "CA" ;
     ds:institutionName "Université de Sherbrooke" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2579532> .
 
 <https://openalex.org/I142263535> a ds:Institution ;
     rdfs:label "University of Nottingham" ;
     ds:institutionCountry "GB" ;
     ds:institutionName "University of Nottingham" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q472316> .
 
 <https://openalex.org/I145872427> a ds:Institution ;
     rdfs:label "Radboud University Nijmegen" ;
     ds:institutionCountry "NL" ;
     ds:institutionName "Radboud University Nijmegen" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q632004> .
 
 <https://openalex.org/I15196421> a ds:Institution ;
     rdfs:label "University of Applied Sciences and Arts of Southern Switzerland" ;
     ds:institutionCountry "CH" ;
     ds:institutionName "University of Applied Sciences and Arts of Southern Switzerland" ;
-    ds:institutionType "education" .
+    ds:institutionType "education" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q663984> .
 
 <https://openalex.org/I157286207> a ds:Institution ;
     rdfs:label "National University of Ireland, Maynooth" ;
     ds:institutionCountry "IE" ;
     ds:institutionName "National University of Ireland, Maynooth" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2601879> .
 
 <https://openalex.org/I160993911> a ds:Institution ;
     rdfs:label "Queensland University of Technology" ;
     ds:institutionCountry "AU" ;
     ds:institutionName "Queensland University of Technology" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1144750> .
 
 <https://openalex.org/I162290304> a ds:Institution ;
     rdfs:label "Scuola Superiore Sant'Anna" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "Scuola Superiore Sant'Anna" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q774609> .
 
 <https://openalex.org/I165862685> a ds:Institution ;
     rdfs:label "St George's, University of London" ;
     ds:institutionCountry "GB" ;
     ds:institutionName "St George's, University of London" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q772421> .
 
 <https://openalex.org/I166337079> a ds:Institution ;
     rdfs:label "Queen Mary University of London" ;
     ds:institutionCountry "GB" ;
     ds:institutionName "Queen Mary University of London" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q195668> .
 
 <https://openalex.org/I173888879> a ds:Institution ;
     rdfs:label "SINTEF" ;
     ds:institutionCountry "NO" ;
     ds:institutionName "SINTEF" ;
-    ds:institutionType "facility" .
+    ds:institutionType "facility" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3041255> .
 
 <https://openalex.org/I173956350> a ds:Institution ;
     rdfs:label "Patna Medical College and Hospital" ;
     ds:institutionCountry "IN" ;
     ds:institutionName "Patna Medical College and Hospital" ;
-    ds:institutionType "education" .
+    ds:institutionType "education" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q7145106> .
 
 <https://openalex.org/I176453806> a ds:Institution ;
     rdfs:label "University of Potsdam" ;
     ds:institutionCountry "DE" ;
     ds:institutionName "University of Potsdam" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q153012> .
 
 <https://openalex.org/I180670191> a ds:Institution ;
     rdfs:label "University of California, San Francisco" ;
     ds:institutionCountry "US" ;
     ds:institutionName "University of California, San Francisco" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1061104> .
 
 <https://openalex.org/I184942183> a ds:Institution ;
     rdfs:label "University of Oslo" ;
     ds:institutionCountry "NO" ;
     ds:institutionName "University of Oslo" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q486156> .
 
 <https://openalex.org/I185103710> a ds:Institution ;
     rdfs:label "University of California, Santa Cruz" ;
     ds:institutionCountry "US" ;
     ds:institutionName "University of California, Santa Cruz" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1047293> .
 
 <https://openalex.org/I186771145> a ds:Institution ;
     rdfs:label "Covenant University" ;
     ds:institutionCountry "NG" ;
     ds:institutionName "Covenant University" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q742241> .
 
 <https://openalex.org/I188922065> a ds:Institution ;
     rdfs:label "University of Economics in Katowice" ;
     ds:institutionCountry "PL" ;
     ds:institutionName "University of Economics in Katowice" ;
-    ds:institutionType "education" .
+    ds:institutionType "education" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q657590> .
 
 <https://openalex.org/I20121455> a ds:Institution ;
     rdfs:label "Bielefeld University" ;
     ds:institutionCountry "DE" ;
     ds:institutionName "Bielefeld University" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q24382> .
 
 <https://openalex.org/I205274468> a ds:Institution ;
     rdfs:label "Trinity College Dublin" ;
     ds:institutionCountry "IE" ;
     ds:institutionName "Trinity College Dublin" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q258464> .
 
 <https://openalex.org/I25217355> a ds:Institution ;
     rdfs:label "University of Pavia" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "University of Pavia" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q219317> .
 
 <https://openalex.org/I27483092> a ds:Institution ;
     rdfs:label "University of Perugia" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "University of Perugia" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q748085> .
 
 <https://openalex.org/I279922783> a ds:Institution ;
     rdfs:label "Pwani University" ;
     ds:institutionCountry "KE" ;
     ds:institutionName "Pwani University" ;
-    ds:institutionType "education" .
+    ds:institutionType "education" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q17110774> .
 
 <https://openalex.org/I2799358833> a ds:Institution ;
     rdfs:label "Azienda Ospedaliera San Giovanni Addolorata" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "Azienda Ospedaliera San Giovanni Addolorata" ;
-    ds:institutionType "healthcare" .
+    ds:institutionType "healthcare" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3145226> .
 
 <https://openalex.org/I2799858192> a ds:Institution ;
     rdfs:label "London School of Business and Management" ;
     ds:institutionCountry "GB" ;
     ds:institutionName "London School of Business and Management" ;
-    ds:institutionType "education" .
+    ds:institutionType "education" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6670736> .
 
 <https://openalex.org/I2801845744> a ds:Institution ;
     rdfs:label "Toronto General Hospital" ;
     ds:institutionCountry "CA" ;
     ds:institutionName "Toronto General Hospital" ;
-    ds:institutionType "healthcare" .
+    ds:institutionType "healthcare" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2444359> .
 
 <https://openalex.org/I2802934949> a ds:Institution ;
     rdfs:label "Radboud University Medical Center" ;
     ds:institutionCountry "NL" ;
     ds:institutionName "Radboud University Medical Center" ;
-    ds:institutionType "healthcare" .
+    ds:institutionType "healthcare" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2594321> .
 
 <https://openalex.org/I305386> a ds:Institution ;
     rdfs:label "Colgate-Palmolive (Switzerland)" ;
@@ -3219,61 +3266,71 @@
     rdfs:label "Wroclaw University of Economics and Business" ;
     ds:institutionCountry "PL" ;
     ds:institutionName "Wroclaw University of Economics and Business" ;
-    ds:institutionType "education" .
+    ds:institutionType "education" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1041598> .
 
 <https://openalex.org/I31746571> a ds:Institution ;
     rdfs:label "UNSW Sydney" ;
     ds:institutionCountry "AU" ;
     ds:institutionName "UNSW Sydney" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q734764> .
 
 <https://openalex.org/I31762744> a ds:Institution ;
     rdfs:label "University of Gastronomic Sciences" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "University of Gastronomic Sciences" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2523033> .
 
 <https://openalex.org/I32699454> a ds:Institution ;
     rdfs:label "Joint Institute for Nuclear Research" ;
     ds:institutionCountry "RU" ;
     ds:institutionName "Joint Institute for Nuclear Research" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q259517> .
 
 <https://openalex.org/I36443711> a ds:Institution ;
     rdfs:label "Magna Graecia University" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "Magna Graecia University" ;
-    ds:institutionType "education" .
+    ds:institutionType "education" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q266537> .
 
 <https://openalex.org/I39555362> a ds:Institution ;
     rdfs:label "University of Warwick" ;
     ds:institutionCountry "GB" ;
     ds:institutionName "University of Warwick" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q865528> .
 
 <https://openalex.org/I4068193> a ds:Institution ;
     rdfs:label "University of Belgrade" ;
     ds:institutionCountry "RS" ;
     ds:institutionName "University of Belgrade" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q240631> .
 
 <https://openalex.org/I4210087059> a ds:Institution ;
     rdfs:label "Technology Innovation Institute" ;
     ds:institutionCountry "AE" ;
     ds:institutionName "Technology Innovation Institute" ;
-    ds:institutionType "facility" .
+    ds:institutionType "facility" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q103813517> .
 
 <https://openalex.org/I4210094195> a ds:Institution ;
     rdfs:label "Azienda Socio Sanitaria Territoriale Grande Ospedale Metropolitano Niguarda" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "Azienda Socio Sanitaria Territoriale Grande Ospedale Metropolitano Niguarda" ;
-    ds:institutionType "healthcare" .
+    ds:institutionType "healthcare" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3886620> .
 
 <https://openalex.org/I4210104430> a ds:Institution ;
     rdfs:label "Laboratoire d'Informatique de Grenoble" ;
     ds:institutionCountry "FR" ;
     ds:institutionName "Laboratoire d'Informatique de Grenoble" ;
-    ds:institutionType "facility" .
+    ds:institutionType "facility" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3214404> .
 
 <https://openalex.org/I4210105192> a ds:Institution ;
     rdfs:label "United Institute of Informatics Problems" ;
@@ -3285,7 +3342,8 @@
     rdfs:label "Russian State University for Physical Education Sport Youth and Tourism" ;
     ds:institutionCountry "RU" ;
     ds:institutionName "Russian State University for Physical Education Sport Youth and Tourism" ;
-    ds:institutionType "education" .
+    ds:institutionType "education" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4398072> .
 
 <https://openalex.org/I4210109742> a ds:Institution ;
     rdfs:label "Shree Krishna Hospital" ;
@@ -3309,7 +3367,8 @@
     rdfs:label "Laboratoire des Sciences du Numérique de Nantes" ;
     ds:institutionCountry "FR" ;
     ds:institutionName "Laboratoire des Sciences du Numérique de Nantes" ;
-    ds:institutionType "facility" .
+    ds:institutionType "facility" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q30737807> .
 
 <https://openalex.org/I4210117802> a ds:Institution ;
     rdfs:label "Institute of Electronics" ;
@@ -3333,13 +3392,15 @@
     rdfs:label "IRCCS Ospedale San Raffaele" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "IRCCS Ospedale San Raffaele" ;
-    ds:institutionType "healthcare" .
+    ds:institutionType "healthcare" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3145229> .
 
 <https://openalex.org/I4210133755> a ds:Institution ;
     rdfs:label "Universitas Muhammadiyah Kupang" ;
     ds:institutionCountry "ID" ;
     ds:institutionName "Universitas Muhammadiyah Kupang" ;
-    ds:institutionType "education" .
+    ds:institutionType "education" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q12523388> .
 
 <https://openalex.org/I4210135416> a ds:Institution ;
     rdfs:label "Ospedale di Parma" ;
@@ -3351,7 +3412,8 @@
     rdfs:label "Laboratoire d'Informatique de l'École Polytechnique" ;
     ds:institutionCountry "FR" ;
     ds:institutionName "Laboratoire d'Informatique de l'École Polytechnique" ;
-    ds:institutionType "facility" .
+    ds:institutionType "facility" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q16009025> .
 
 <https://openalex.org/I4210139705> a ds:Institution ;
     rdfs:label "Ingegneria dei Sistemi (Italy)" ;
@@ -3363,19 +3425,22 @@
     rdfs:label "Centro Nacional de Análisis Genómico" ;
     ds:institutionCountry "ES" ;
     ds:institutionName "Centro Nacional de Análisis Genómico" ;
-    ds:institutionType "facility" .
+    ds:institutionType "facility" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q21730709> .
 
 <https://openalex.org/I4210146710> a ds:Institution ;
     rdfs:label "Mayo Clinic in Florida" ;
     ds:institutionCountry "US" ;
     ds:institutionName "Mayo Clinic in Florida" ;
-    ds:institutionType "healthcare" .
+    ds:institutionType "healthcare" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6797499> .
 
 <https://openalex.org/I4210150100> a ds:Institution ;
     rdfs:label "Metropolitana Milanese (Italy)" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "Metropolitana Milanese (Italy)" ;
-    ds:institutionType "company" .
+    ds:institutionType "company" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3855742> .
 
 <https://openalex.org/I4210151645> a ds:Institution ;
     rdfs:label "Policlinico San Matteo Fondazione" ;
@@ -3387,7 +3452,8 @@
     rdfs:label "Azienda Ospedaliera di Desio e Vimercate" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "Azienda Ospedaliera di Desio e Vimercate" ;
-    ds:institutionType "healthcare" .
+    ds:institutionType "healthcare" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q30279680> .
 
 <https://openalex.org/I4210153325> a ds:Institution ;
     rdfs:label "Institute of Mathematical Statistics" ;
@@ -3405,13 +3471,15 @@
     rdfs:label "National Research Council" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "National Research Council" ;
-    ds:institutionType "nonprofit" .
+    ds:institutionType "nonprofit" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q902464> .
 
 <https://openalex.org/I4210156583> a ds:Institution ;
     rdfs:label "Laboratoire d'Informatique de Paris-Nord" ;
     ds:institutionCountry "FR" ;
     ds:institutionName "Laboratoire d'Informatique de Paris-Nord" ;
-    ds:institutionType "facility" .
+    ds:institutionType "facility" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3214424> .
 
 <https://openalex.org/I4210167034> a ds:Institution ;
     rdfs:label "Millennium Institute for Integrative Biology" ;
@@ -3423,127 +3491,148 @@
     rdfs:label "Ontotext (Bulgaria)" ;
     ds:institutionCountry "BG" ;
     ds:institutionName "Ontotext (Bulgaria)" ;
-    ds:institutionType "company" .
+    ds:institutionType "company" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q7095072> .
 
 <https://openalex.org/I55133342> a ds:Institution ;
     rdfs:label "University of Macerata" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "University of Macerata" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1742507> .
 
 <https://openalex.org/I57201433> a ds:Institution ;
     rdfs:label "Università della Svizzera italiana" ;
     ds:institutionCountry "CH" ;
     ds:institutionName "Università della Svizzera italiana" ;
-    ds:institutionType "education" .
+    ds:institutionType "education" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q689617> .
 
 <https://openalex.org/I60668342> a ds:Institution ;
     rdfs:label "University of Regensburg" ;
     ds:institutionCountry "DE" ;
     ds:institutionName "University of Regensburg" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q574571> .
 
 <https://openalex.org/I6141010> a ds:Institution ;
     rdfs:label "European Institute of Oncology" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "European Institute of Oncology" ;
-    ds:institutionType "healthcare" .
+    ds:institutionType "healthcare" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1376693> .
 
 <https://openalex.org/I62318514> a ds:Institution ;
     rdfs:label "University of Duisburg-Essen" ;
     ds:institutionCountry "DE" ;
     ds:institutionName "University of Duisburg-Essen" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q696757> .
 
 <https://openalex.org/I62916508> a ds:Institution ;
     rdfs:label "Technical University of Munich" ;
     ds:institutionCountry "DE" ;
     ds:institutionName "Technical University of Munich" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q157808> .
 
 <https://openalex.org/I69737025> a ds:Institution ;
     rdfs:label "University of Chile" ;
     ds:institutionCountry "CL" ;
     ds:institutionName "University of Chile" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q232141> .
 
 <https://openalex.org/I71209653> a ds:Institution ;
     rdfs:label "Bocconi University" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "Bocconi University" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q959524> .
 
 <https://openalex.org/I74788687> a ds:Institution ;
     rdfs:label "Comenius University Bratislava" ;
     ds:institutionCountry "SK" ;
     ds:institutionName "Comenius University Bratislava" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q31392> .
 
 <https://openalex.org/I79576946> a ds:Institution ;
     rdfs:label "University of Pennsylvania" ;
     ds:institutionCountry "US" ;
     ds:institutionName "University of Pennsylvania" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q49117> .
 
 <https://openalex.org/I81556334> a ds:Institution ;
     rdfs:label "Amrita Vishwa Vidyapeetham" ;
     ds:institutionCountry "IN" ;
     ds:institutionName "Amrita Vishwa Vidyapeetham" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4748684> .
 
 <https://openalex.org/I83019370> a ds:Institution ;
     rdfs:label "Eindhoven University of Technology" ;
     ds:institutionCountry "NL" ;
     ds:institutionName "Eindhoven University of Technology" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q280824> .
 
 <https://openalex.org/I861853513> a ds:Institution ;
     rdfs:label "Sapienza University of Rome" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "Sapienza University of Rome" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q209344> .
 
 <https://openalex.org/I86519309> a ds:Institution ;
     rdfs:label "The University of Texas at Austin" ;
     ds:institutionCountry "US" ;
     ds:institutionName "The University of Texas at Austin" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q49213> .
 
 <https://openalex.org/I865915315> a ds:Institution ;
     rdfs:label "Vrije Universiteit Amsterdam" ;
     ds:institutionCountry "NL" ;
     ds:institutionName "Vrije Universiteit Amsterdam" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1065414> .
 
 <https://openalex.org/I899635006> a ds:Institution ;
     rdfs:label "Université Grenoble Alpes" ;
     ds:institutionCountry "FR" ;
     ds:institutionName "Université Grenoble Alpes" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q945876> .
 
 <https://openalex.org/I931913249> a ds:Institution ;
     rdfs:label "Norwegian School of Economics" ;
     ds:institutionCountry "NO" ;
     ds:institutionName "Norwegian School of Economics" ;
-    ds:institutionType "education" .
+    ds:institutionType "education" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q520458> .
 
 <https://openalex.org/I94624287> a ds:Institution ;
     rdfs:label "University of Twente" ;
     ds:institutionCountry "NL" ;
     ds:institutionName "University of Twente" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1547084> .
 
 <https://openalex.org/I97018004> a ds:Institution ;
     rdfs:label "Stanford University" ;
     ds:institutionCountry "US" ;
     ds:institutionName "Stanford University" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q41506> .
 
 <https://openalex.org/I98358874> a ds:Institution ;
     rdfs:label "Delft University of Technology" ;
     ds:institutionCountry "NL" ;
     ds:institutionName "Delft University of Technology" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q752663> .
 
 <http://example.org/ds/0000-0001-5452-1918> a ds:Author ;
     rdfs:label "Alex Graudenzi" ;
@@ -4710,31 +4799,36 @@
     rdfs:label "University of Pisa" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "University of Pisa" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q645663> .
 
 <https://openalex.org/I127077003> a ds:Institution ;
     rdfs:label "IMT School for Advanced Studies Lucca" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "IMT School for Advanced Studies Lucca" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3788629> .
 
 <https://openalex.org/I145847075> a ds:Institution ;
     rdfs:label "TU Wien" ;
     ds:institutionCountry "AT" ;
     ds:institutionName "TU Wien" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q689400> .
 
 <https://openalex.org/I3006985408> a ds:Institution ;
     rdfs:label "Jožef Stefan Institute" ;
     ds:institutionCountry "SI" ;
     ds:institutionName "Jožef Stefan Institute" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5918873> .
 
 <https://openalex.org/I35440088> a ds:Institution ;
     rdfs:label "ETH Zurich" ;
     ds:institutionCountry "CH" ;
     ds:institutionName "ETH Zurich" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q11942> .
 
 <https://openalex.org/I4210095629> a ds:Institution ;
     rdfs:label "Institute of Molecular Bioimaging and Physiology" ;
@@ -4746,49 +4840,57 @@
     rdfs:label "IRCCS Policlinico San Donato" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "IRCCS Policlinico San Donato" ;
-    ds:institutionType "healthcare" .
+    ds:institutionType "healthcare" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q30282161> .
 
 <https://openalex.org/I4210103417> a ds:Institution ;
     rdfs:label "Systematic (Netherlands)" ;
     ds:institutionCountry "NL" ;
     ds:institutionName "Systematic (Netherlands)" ;
-    ds:institutionType "company" .
+    ds:institutionType "company" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q30292188> .
 
 <https://openalex.org/I4210134201> a ds:Institution ;
     rdfs:label "IRCCS Istituto Auxologico Italiano" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "IRCCS Istituto Auxologico Italiano" ;
-    ds:institutionType "healthcare" .
+    ds:institutionType "healthcare" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q30281627> .
 
 <https://openalex.org/I4210144925> a ds:Institution ;
     rdfs:label "Technological University Dublin" ;
     ds:institutionCountry "IE" ;
     ds:institutionName "Technological University Dublin" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q55619051> .
 
 <https://openalex.org/I4210156707> a ds:Institution ;
     rdfs:label "Fondazione IRCCS Istituto Nazionale dei Tumori" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "Fondazione IRCCS Istituto Nazionale dei Tumori" ;
-    ds:institutionType "healthcare" .
+    ds:institutionType "healthcare" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3747179> .
 
 <https://openalex.org/I55143463> a ds:Institution ;
     rdfs:label "University of Turin" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "University of Turin" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q499911> .
 
 <https://openalex.org/I68916915> a ds:Institution ;
     rdfs:label "University of Gabès" ;
     ds:institutionCountry "TN" ;
     ds:institutionName "University of Gabès" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q649578> .
 
 <https://openalex.org/I9617848> a ds:Institution ;
     rdfs:label "Universitat Politècnica de Catalunya" ;
     ds:institutionCountry "ES" ;
     ds:institutionName "Universitat Politècnica de Catalunya" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1640731> .
 
 <http://example.org/ds/0000-0001-9803-3668> a ds:Author ;
     rdfs:label "Andrea Maurino" ;
@@ -5514,43 +5616,50 @@
     rdfs:label "Ca' Foscari University of Venice" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "Ca' Foscari University of Venice" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1546906> .
 
 <https://openalex.org/I169381384> a ds:Institution ;
     rdfs:label "University of Groningen" ;
     ds:institutionCountry "NL" ;
     ds:institutionName "University of Groningen" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q850730> .
 
 <https://openalex.org/I171543936> a ds:Institution ;
     rdfs:label "Free University of Bozen-Bolzano" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "Free University of Bozen-Bolzano" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1231433> .
 
 <https://openalex.org/I181565077> a ds:Institution ;
     rdfs:label "Georgia State University" ;
     ds:institutionCountry "US" ;
     ds:institutionName "Georgia State University" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1509333> .
 
 <https://openalex.org/I60053951> a ds:Institution ;
     rdfs:label "Universitat Politècnica de València" ;
     ds:institutionCountry "ES" ;
     ds:institutionName "Universitat Politècnica de València" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2003976> .
 
 <https://openalex.org/I71267560> a ds:Institution ;
     rdfs:label "University of Naples Federico II" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "University of Naples Federico II" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q691851> .
 
 <https://openalex.org/I74319210> a ds:Institution ;
     rdfs:label "Chitkara University" ;
     ds:institutionCountry "IN" ;
     ds:institutionName "Chitkara University" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5102255> .
 
 <http://example.org/ds/0000-0001-5212-6463> a ds:Author ;
     rdfs:label "Davide Ausili" ;
@@ -6200,13 +6309,15 @@
     rdfs:label "University of Rome Tor Vergata" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "University of Rome Tor Vergata" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1031803> .
 
 <https://openalex.org/I121797337> a ds:Institution ;
     rdfs:label "Leiden University" ;
     ds:institutionCountry "NL" ;
     ds:institutionName "Leiden University" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q156598> .
 
 <https://openalex.org/I4210153126> a ds:Institution ;
     rdfs:label "Istituti di Ricovero e Cura a Carattere Scientifico" ;
@@ -6706,19 +6817,22 @@
     rdfs:label "University of Padua" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "University of Padua" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q193510> .
 
 <https://openalex.org/I176601375> a ds:Institution ;
     rdfs:label "Khalifa University of Science and Technology" ;
     ds:institutionCountry "AE" ;
     ds:institutionName "Khalifa University of Science and Technology" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6399651> .
 
 <https://openalex.org/I177477856> a ds:Institution ;
     rdfs:label "Polytechnic University of Turin" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "Polytechnic University of Turin" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q392897> .
 
 <https://openalex.org/I2277624104> a ds:Institution ;
     rdfs:label "Fondazione Bruno Kessler" ;
@@ -6730,7 +6844,8 @@
     rdfs:label "Politecnico di Milano" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "Politecnico di Milano" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q392904> .
 
 <nan> a ds:Institution ;
     rdfs:label "NaN"^^xsd:double ;
@@ -7622,7 +7737,8 @@
     rdfs:label "University of Milan" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "University of Milan" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q46210> .
 
 <http://example.org/ds/0000-0001-6864-2702> a ds:Author ;
     rdfs:label "Fabio Mercorio" ;
@@ -7870,5 +7986,8 @@
     rdfs:label "University of Milano-Bicocca" ;
     ds:institutionCountry "IT" ;
     ds:institutionName "University of Milano-Bicocca" ;
-    ds:institutionType "funder" .
+    ds:institutionType "funder" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1073674> .
+
+ds:Author rdfs:subClassOf ds:Person .
 
