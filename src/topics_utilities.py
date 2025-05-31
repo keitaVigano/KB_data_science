@@ -28,8 +28,9 @@ def get_subfield_by_author(orcid):
                 if i > 4:
                     break
                 field = t.get("subfield").get("display_name")
+                ids = t.get("subfield").get("id")
                 if field and field not in fields:
-                    fields.append(field)
+                    fields.append([field, ids])
                 i += 1
 
             break
@@ -59,32 +60,29 @@ def get_subfield(doi):
     concepts = data.get("topics", [])
     if concepts:
         field = concepts[0].get("subfield").get("display_name")
+        ids = concepts[0].get("subfield").get("id")
     else:
         field = None
+        ids = None
 
-    return field
+    return [field, ids]
 
 
-def find_wikidata_entity(label, lang="en", delay=1.0):
-    endpoint = "https://query.wikidata.org/sparql"
-    headers = {"Accept": "application/sparql-results+json"}
+def find_wikidata_entity(url, lang="en", delay=1.0):
+    wikidata = ""
 
-    query = f"""
-    SELECT ?item ?itemLabel WHERE {{
-      ?item rdfs:label "{label}"@{lang}.
-      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
-    }}
-    LIMIT 1
-    """
+    try:
+        res = requests.get(url, timeout=10)
+        res.raise_for_status()
+    except requests.RequestException as e:
+        print(f"Errore nella richiesta OpenAlex: {e}")
+        return None
 
-    # Attendi prima della chiamata
-    time.sleep(delay)
+    data = res.json()
+    ids = data.get("ids", [])
+    if ids:
+        wikidata = ids.get("wikidata", "")
+    else:
+        wikidata = None
 
-    response = requests.get(endpoint, params={"query": query}, headers=headers)
-
-    if response.status_code == 200:
-        results = response.json()["results"]["bindings"]
-        if results:
-            return results[0]["item"]["value"]
-
-    return None
+    return wikidata

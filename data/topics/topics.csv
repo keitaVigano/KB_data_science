@@ -1,65 +1,65 @@
 topic,wikidata_uri
-Surgery,http://www.wikidata.org/entity/Q3978151
-Biochemistry,http://www.wikidata.org/entity/Q764876
-Oncology,http://www.wikidata.org/entity/Q1998293
-Clinical Psychology,http://www.wikidata.org/entity/Q96331017
-Experimental and Cognitive Psychology,
-Computer Vision and Pattern Recognition,
-Signal Processing,http://www.wikidata.org/entity/Q15766873
-Geology,http://www.wikidata.org/entity/Q5535339
-Artificial Intelligence,http://www.wikidata.org/entity/Q128447
-"Atomic and Molecular Physics, and Optics",
-Cognitive Neuroscience,http://www.wikidata.org/entity/Q5141168
-Environmental Engineering,http://www.wikidata.org/entity/Q96325837
-Cardiology and Cardiovascular Medicine,
-Molecular Biology,http://www.wikidata.org/entity/Q4300349
-Statistics and Probability,
-Genetics,http://www.wikidata.org/entity/Q3100575
-"Radiology, Nuclear Medicine and Imaging",
-Computer Networks and Communications,
-Electrical and Electronic Engineering,http://www.wikidata.org/entity/Q53952435
-Building and Construction,
-Information Systems,http://www.wikidata.org/entity/Q2343231
-Management Science and Operations Research,
-Computer Science Applications,
-Cancer Research,http://www.wikidata.org/entity/Q326097
-Plant Science,http://www.wikidata.org/entity/Q15746538
-Software,http://www.wikidata.org/entity/Q2297604
-Hardware and Architecture,
-Infectious Diseases,http://www.wikidata.org/entity/Q7429961
-Physical and Theoretical Chemistry,
-Computational Theory and Mathematics,
-Sociology and Political Science,
-Economics and Econometrics,
-Social Psychology,http://www.wikidata.org/entity/Q7550759
-Radiological and Ultrasound Technology,
+Surgery,http://www.wikidata.org/entity/Q40821
+Biochemistry,http://www.wikidata.org/entity/Q7094
+Oncology,http://www.wikidata.org/entity/Q162555
+Clinical Psychology,http://www.wikidata.org/entity/Q199906
+Experimental and Cognitive Psychology,https://www.wikidata.org/wiki/Q23373
+Computer Vision and Pattern Recognition,https://www.wikidata.org/wiki/Q844240
+Signal Processing,http://www.wikidata.org/entity/Q208163
+Geology,http://www.wikidata.org/entity/Q1069
+Artificial Intelligence,http://www.wikidata.org/entity/Q11660
+"Atomic and Molecular Physics, and Optics",https://www.wikidata.org/wiki/Q489328
+Cognitive Neuroscience,http://www.wikidata.org/entity/Q1138951
+Environmental Engineering,http://www.wikidata.org/entity/Q146326
+Cardiology and Cardiovascular Medicine,https://www.wikidata.org/wiki/Q10379
+Molecular Biology,http://www.wikidata.org/entity/Q7202
+Statistics and Probability,https://www.wikidata.org/wiki/Q12483
+Genetics,http://www.wikidata.org/entity/Q7162
+"Radiology, Nuclear Medicine and Imaging",https://www.wikidata.org/wiki/Q77604
+Computer Networks and Communications,https://www.wikidata.org/wiki/Q1301371
+Electrical and Electronic Engineering,https://www.wikidata.org/wiki/Q126095
+Building and Construction,http://www.wikidata.org/entity/Q765464
+Information Systems,http://www.wikidata.org/entity/Q64812807
+Management Science and Operations Research,https://www.wikidata.org/wiki/Q2414942
+Computer Science Applications,https://www.wikidata.org/wiki/Q21198
+Cancer Research,http://www.wikidata.org/entity/Q3421914
+Plant Science,http://www.wikidata.org/entity/Q441
+Software,http://www.wikidata.org/entity/Q7397
+Hardware and Architecture,https://www.wikidata.org/wiki/Q3966
+Infectious Diseases,http://www.wikidata.org/entity/Q18123741
+Physical and Theoretical Chemistry,https://www.wikidata.org/wiki/Q321150
+Computational Theory and Mathematics,https://www.wikidata.org/wiki/Q1122491
+Sociology and Political Science,https://www.wikidata.org/wiki/Q34749
+Economics and Econometrics,https://www.wikidata.org/wiki/Q8134
+Social Psychology,http://www.wikidata.org/entity/Q161272
+Radiological and Ultrasound Technology,https://www.wikidata.org/wiki/Q77604
 Control and Systems Engineering,http://www.wikidata.org/entity/Q96703125
-Health Information Management,http://www.wikidata.org/entity/Q5691087
-Political Science and International Relations,
-Strategy and Management,http://www.wikidata.org/entity/Q107416251
-General Agricultural and Biological Sciences,
-Demography,http://www.wikidata.org/entity/Q5256121
-Industrial and Manufacturing Engineering,
-Soil Science,http://www.wikidata.org/entity/Q15758585
-Family Practice,http://www.wikidata.org/entity/Q5433219
-Biomedical Engineering,http://www.wikidata.org/entity/Q26839979
-Statistical and Nonlinear Physics,
-Biophysics,http://www.wikidata.org/entity/Q96696391
-Food Science,http://www.wikidata.org/entity/Q56660167
-Media Technology,
-Analytical Chemistry,http://www.wikidata.org/entity/Q485223
-Health,http://www.wikidata.org/entity/Q527905
-"Health, Toxicology and Mutagenesis",
-"General Economics, Econometrics and Finance",
-Finance,http://www.wikidata.org/entity/Q3248972
-Modeling and Simulation,http://www.wikidata.org/entity/Q69149603
-"Tourism, Leisure and Hospitality Management",
-"Management, Monitoring, Policy and Law",
-Toxicology,http://www.wikidata.org/entity/Q1666328
-Ecology,http://www.wikidata.org/entity/Q294952
-"Endocrinology, Diabetes and Metabolism",
-Pulmonary and Respiratory Medicine,
-Nephrology,http://www.wikidata.org/entity/Q15750101
-General Health Professions,
-Immunology,http://www.wikidata.org/entity/Q15754984
-Management Information Systems,http://www.wikidata.org/entity/Q96331842
+Health Information Management,https://www.wikidata.org/wiki/Q55693901
+Political Science and International Relations,http://www.wikidata.org/entity/Q55659900
+Strategy and Management,https://www.wikidata.org/wiki/Q185451
+General Agricultural and Biological Sciences,https://www.wikidata.org/wiki/Q11451
+Demography,http://www.wikidata.org/entity/Q37732
+Industrial and Manufacturing Engineering,https://www.wikidata.org/wiki/Q11049265
+Soil Science,http://www.wikidata.org/entity/Q9161265
+Family Practice,http://www.wikidata.org/entity/Q3505712
+Biomedical Engineering,http://www.wikidata.org/entity/Q327092
+Statistical and Nonlinear Physics,https://www.wikidata.org/wiki/Q677916
+Biophysics,http://www.wikidata.org/entity/Q7100
+Food Science,http://www.wikidata.org/entity/Q1637030
+Media Technology,http://www.wikidata.org/entity/Q1916441
+Analytical Chemistry,http://www.wikidata.org/entity/Q2346
+Health,http://www.wikidata.org/entity/Q12147
+"Health, Toxicology and Mutagenesis",https://www.wikidata.org/wiki/Q7218
+"General Economics, Econometrics and Finance",https://www.wikidata.org/wiki/Q8134
+Finance,http://www.wikidata.org/entity/Q43015
+Modeling and Simulation,http://www.wikidata.org/entity/Q6888384
+"Tourism, Leisure and Hospitality Management",https://www.wikidata.org/wiki/Q15816013
+"Management, Monitoring, Policy and Law",https://www.wikidata.org/wiki/Q7748
+Toxicology,http://www.wikidata.org/entity/Q7218
+Ecology,http://www.wikidata.org/entity/Q7150
+"Endocrinology, Diabetes and Metabolism",http://www.wikidata.org/entity/Q96320251
+Pulmonary and Respiratory Medicine,http://www.wikidata.org/entity/Q96730933
+Nephrology,http://www.wikidata.org/entity/Q177635
+General Health Professions,https://www.wikidata.org/wiki/Q3922583
+Immunology,http://www.wikidata.org/entity/Q101929
+Management Information Systems,http://www.wikidata.org/entity/Q61905
