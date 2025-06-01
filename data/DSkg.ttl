@@ -1,14 +1,13 @@
 @prefix ds: <http://dsgraph.org/ds#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ds:authored rdfs:domain ds:Author ;
-    rdfs:range ds:Paper ;
-    owl:inverseOf ds:hasAuthor .
-
-ds:hasTopic rdfs:domain ds:Paper ;
-    rdfs:range ds:Topic .
+ds:hasInterest a owl:ObjectProperty ;
+    rdfs:domain ds:Author ;
+    rdfs:range ds:Topic ;
+    owl:propertyChainAxiom ( ds:authored ds:hasTopic ) .
 
 <http://dsgraph.org/ds/0000-0001-9601-0403> a ds:Author ;
     rdfs:label "Mirko Cesarini" ;
@@ -36,8 +35,15 @@ ds:hasTopic rdfs:domain ds:Paper ;
     ds:pastInstitutionsID "['https://openalex.org/I4210140564', 'https://openalex.org/I4210129701', 'https://openalex.org/I132091411', 'https://openalex.org/I149213910', 'https://openalex.org/I67311998', 'https://openalex.org/I57201433', 'https://openalex.org/I189158943', 'https://openalex.org/I4210099850', 'https://openalex.org/I2802335433']" ;
     ds:teaches <http://dsgraph.org/ds/Data_Science_Lab_in_Environment_and_Physics> .
 
+ds:authored rdfs:domain ds:Author ;
+    rdfs:range ds:Paper ;
+    owl:inverseOf ds:hasAuthor .
+
 ds:hasAuthor rdfs:domain ds:Paper ;
     rdfs:range ds:Author .
+
+ds:hasTopic rdfs:domain ds:Paper ;
+    rdfs:range ds:Topic .
 
 <http://dsgraph.org/ds/0000-0001-2345-6789> a ds:Author ;
     rdfs:label "Oktovianus Rerung" ;
