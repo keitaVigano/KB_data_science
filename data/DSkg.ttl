@@ -4,10 +4,21 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+ds:hasContactWith a owl:ObjectProperty ;
+    rdfs:domain ds:Author ;
+    rdfs:range ds:Institution ;
+    owl:propertyChainAxiom ( ds:authored ds:hasAuthor ds:hasInstitution ) .
+
+ds:hasDOI a owl:FunctionalProperty .
+
 ds:hasInterest a owl:ObjectProperty ;
     rdfs:domain ds:Author ;
     rdfs:range ds:Topic ;
     owl:propertyChainAxiom ( ds:authored ds:hasTopic ) .
+
+ds:hasORCID a owl:FunctionalProperty .
+
+ds:teaches a owl:ObjectProperty .
 
 <http://dsgraph.org/ds/0000-0001-9601-0403> a ds:Author ;
     rdfs:label "Mirko Cesarini" ;
@@ -35,14 +46,12 @@ ds:hasInterest a owl:ObjectProperty ;
     ds:pastInstitutionsID "['https://openalex.org/I4210140564', 'https://openalex.org/I4210129701', 'https://openalex.org/I132091411', 'https://openalex.org/I149213910', 'https://openalex.org/I67311998', 'https://openalex.org/I57201433', 'https://openalex.org/I189158943', 'https://openalex.org/I4210099850', 'https://openalex.org/I2802335433']" ;
     ds:teaches <http://dsgraph.org/ds/Data_Science_Lab_in_Environment_and_Physics> .
 
-ds:authored rdfs:domain ds:Author ;
-    rdfs:range ds:Paper ;
-    owl:inverseOf ds:hasAuthor .
+ds:Person a owl:Class .
 
-ds:hasAuthor rdfs:domain ds:Paper ;
-    rdfs:range ds:Author .
+ds:hasInstitution a owl:ObjectProperty .
 
-ds:hasTopic rdfs:domain ds:Paper ;
+ds:hasTopic a owl:ObjectProperty ;
+    rdfs:domain ds:Paper ;
     rdfs:range ds:Topic .
 
 <http://dsgraph.org/ds/0000-0001-2345-6789> a ds:Author ;
@@ -3563,6 +3572,11 @@ ds:hasTopic rdfs:domain ds:Paper ;
     ds:institutionType "funder" ;
     owl:sameAs <http://www.wikidata.org/entity/Q752663> .
 
+ds:authored a owl:ObjectProperty ;
+    rdfs:domain ds:Author ;
+    rdfs:range ds:Paper ;
+    owl:inverseOf ds:hasAuthor .
+
 <http://dsgraph.org/ds/0000-0001-5452-1918> a ds:Author ;
     rdfs:label "Alex Graudenzi" ;
     ds:authored <http://dsgraph.org/ds/paper/10.1007_978-3-030-21733-4_9>,
@@ -4815,6 +4829,10 @@ ds:hasTopic rdfs:domain ds:Paper ;
     ds:institutionName "Universitat Politècnica de Catalunya" ;
     ds:institutionType "funder" ;
     owl:sameAs <http://www.wikidata.org/entity/Q1640731> .
+
+ds:hasAuthor a owl:ObjectProperty ;
+    rdfs:domain ds:Paper ;
+    rdfs:range ds:Author .
 
 <http://dsgraph.org/ds/0000-0001-9803-3668> a ds:Author ;
     rdfs:label "Andrea Maurino" ;
@@ -7907,9 +7925,15 @@ ds:hasTopic rdfs:domain ds:Paper ;
     ds:pastInstitutionsID "['https://openalex.org/I83467386', 'https://openalex.org/I114531698', 'https://openalex.org/I2801802255', 'https://openalex.org/I1305651353', 'https://openalex.org/I1325517477', 'https://openalex.org/I189158943', 'https://openalex.org/I4210131007', 'https://openalex.org/I4210105785', 'https://openalex.org/I115752224']" ;
     ds:teaches <http://dsgraph.org/ds/Text_Mining_and_Search> .
 
+ds:Course a owl:Class .
+
 <http://dsgraph.org/ds/topic/Artificial_Intelligence> a ds:Topic ;
     rdfs:label "Artificial Intelligence" ;
     owl:sameAs <http://www.wikidata.org/entity/Q11660> .
+
+ds:Topic a owl:Class .
+
+ds:Institution a owl:Class .
 
 <https://openalex.org/I66752286> a ds:Institution ;
     rdfs:label "University of Milano-Bicocca" ;
@@ -7918,5 +7942,14 @@ ds:hasTopic rdfs:domain ds:Paper ;
     ds:institutionType "funder" ;
     owl:sameAs <http://www.wikidata.org/entity/Q1073674> .
 
-ds:Author rdfs:subClassOf ds:Person .
+ds:Paper a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty ds:hasAuthor ] ;
+    owl:disjointWith ds:Course .
+
+ds:Author a owl:Class ;
+    rdfs:subClassOf ds:Person ;
+    owl:disjointWith ds:Course,
+        ds:Paper .
 
